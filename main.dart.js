@@ -21254,13 +21254,14 @@ ahU:function ahU(){},
 agD:function agD(){},
 eF:function eF(a,b){this.a=a
 this.b=b},
-a6B:function a6B(){},
+a6B:function a6B(a){this.a=a},
 a6E:function a6E(a){this.a=a},
 a6F:function a6F(){},
 a6C:function a6C(){},
 a6D:function a6D(){},
-a6G:function a6G(a,b){this.a=a
-this.b=b},
+a6G:function a6G(a,b,c){this.a=a
+this.b=b
+this.c=c},
 a6H:function a6H(){},
 a6I:function a6I(a,b,c){this.a=a
 this.b=b
@@ -68052,7 +68053,8 @@ $ije:1}
 A.kr.prototype={
 gap(a){return this.d}}
 A.x6.prototype={
-ar(){return new A.Or(new A.a6B(),A.a([],t.Vs),B.j)}}
+ar(){var s=t.N
+return new A.Or(new A.a6B(A.b_(["Access-Control-Allow-Origin","*","Access-Control-Allow-Methods","GET, POST, DELETE, HEAD, OPTIONS","Access-Control-Allow-Credentials","true"],s,s)),A.a([],t.Vs),B.j)}}
 A.Or.prototype={
 nY(){var s=0,r=A.aa(t.H),q=this,p,o,n
 var $async$nY=A.ab(function(a,b){if(a===1)return A.a7(b,r)
@@ -68275,128 +68277,127 @@ A.agD.prototype={}
 A.eF.prototype={
 F(){return"FileSize."+this.b}}
 A.a6B.prototype={
-nS(a2){var s=0,r=A.aa(t.m8),q,p=2,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
-var $async$nS=A.ab(function(a3,a4){if(a3===1){o=a4
-s=p}while(true)switch(s){case 0:b=t.N
-a=A.b_(["Access-Control-Allow-Origin","*","Access-Control-Allow-Methods","GET","Access-Control-Allow-Credentials","true"],b,b)
+nS(a3){var s=0,r=A.aa(t.m8),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2
+var $async$nS=A.ab(function(a4,a5){if(a4===1){o=a5
+s=p}while(true)switch(s){case 0:a=n.a
 s=3
 return A.ac(A.afo(A.hd("https://www.speedtest.net/speedtest-config.php"),a),$async$nS)
-case 3:a0=a4
-b=A.amI(A.aiG(A.aio(a0.e).c.a.j(0,"charset")).cS(0,a0.w))
-b=b==null?null:b.l_("settings")
-k=b==null
-j=k?null:b.l_("client")
-j.bf(0,"ip").toString
-i=j.bf(0,"lat")
-i.toString
-A.jI(i)
-i=j.bf(0,"lon")
-i.toString
-A.jI(i)
-j.bf(0,"isp").toString
-i=j.bf(0,"isprating")
-i.toString
-A.jI(i)
-i=j.bf(0,"rating")
-i.toString
-A.jI(i)
-i=j.bf(0,"ispdlavg")
-i.toString
-A.ct(i,null)
-i=j.bf(0,"ispulavg")
-i.toString
-A.ct(i,null)
-i=j.bf(0,"lat")
+case 3:a0=a5
+a1=A.amI(A.aiG(A.aio(a0.e).c.a.j(0,"charset")).cS(0,a0.w))
+a1=a1==null?null:a1.l_("settings")
+j=a1==null
+i=j?null:a1.l_("client")
+i.bf(0,"ip").toString
+h=i.bf(0,"lat")
+h.toString
+A.jI(h)
+h=i.bf(0,"lon")
+h.toString
+A.jI(h)
+i.bf(0,"isp").toString
+h=i.bf(0,"isprating")
+h.toString
+A.jI(h)
+h=i.bf(0,"rating")
+h.toString
+A.jI(h)
+h=i.bf(0,"ispdlavg")
+h.toString
+A.ct(h,null)
+h=i.bf(0,"ispulavg")
+h.toString
+A.ct(h,null)
+h=i.bf(0,"lat")
+h.toString
+h=A.jI(h)
+i=i.bf(0,"lon")
 i.toString
 i=A.jI(i)
-j=j.bf(0,"lon")
-j.toString
-j=A.jI(j)
-h=k?null:b.l_("times")
-g=h.bf(0,"dl1")
+g=j?null:a1.l_("times")
+f=g.bf(0,"dl1")
+f.toString
+A.ct(f,null)
+f=g.bf(0,"dl2")
+f.toString
+A.ct(f,null)
+f=g.bf(0,"dl3")
+f.toString
+A.ct(f,null)
+f=g.bf(0,"ul1")
+f.toString
+A.ct(f,null)
+f=g.bf(0,"ul2")
+f.toString
+A.ct(f,null)
+g=g.bf(0,"ul3")
 g.toString
 A.ct(g,null)
-g=h.bf(0,"dl2")
+g=j?null:a1.l_("download")
+f=g.bf(0,"testlength")
+f.toString
+A.ct(f,null)
+g.bf(0,"initialtest").toString
+g.bf(0,"mintestsize").toString
+g=g.bf(0,"threadsperurl")
 g.toString
 A.ct(g,null)
-g=h.bf(0,"dl3")
+g=j?null:a1.l_("upload")
+f=g.bf(0,"testlength")
+f.toString
+A.ct(f,null)
+f=g.bf(0,"ratio")
+f.toString
+A.ct(f,null)
+f=g.bf(0,"initialtest")
+f.toString
+A.ct(f,null)
+g.bf(0,"mintestsize").toString
+f=g.bf(0,"threads")
+f.toString
+A.ct(f,null)
+g.bf(0,"maxchunksize").toString
+g.bf(0,"maxchunkcount").toString
+g=g.bf(0,"threadsperurl")
 g.toString
 A.ct(g,null)
-g=h.bf(0,"ul1")
-g.toString
-A.ct(g,null)
-g=h.bf(0,"ul2")
-g.toString
-A.ct(g,null)
-h=h.bf(0,"ul3")
-h.toString
-A.ct(h,null)
-h=k?null:b.l_("download")
-g=h.bf(0,"testlength")
-g.toString
-A.ct(g,null)
-h.bf(0,"initialtest").toString
-h.bf(0,"mintestsize").toString
-h=h.bf(0,"threadsperurl")
-h.toString
-A.ct(h,null)
-h=k?null:b.l_("upload")
-g=h.bf(0,"testlength")
-g.toString
-A.ct(g,null)
-g=h.bf(0,"ratio")
-g.toString
-A.ct(g,null)
-g=h.bf(0,"initialtest")
-g.toString
-A.ct(g,null)
-h.bf(0,"mintestsize").toString
-g=h.bf(0,"threads")
-g.toString
-A.ct(g,null)
-h.bf(0,"maxchunksize").toString
-h.bf(0,"maxchunkcount").toString
-h=h.bf(0,"threadsperurl")
-h.toString
-A.ct(h,null)
-b=(k?null:b.l_("server-config")).bf(0,"ignoreids")
-b.toString
-h=t.Vs
-f=new A.JB(new A.Uu(new A.DG(i,j)),new A.a4B(b),A.a([],h))
-n=new A.yE(A.a([],h))
-e=0
-case 4:if(!(e<4)){s=6
-break}m=B.Bm[e]
-if(J.n4(n.a)){s=6
+a1=(j?null:a1.l_("server-config")).bf(0,"ignoreids")
+a1.toString
+g=t.Vs
+e=new A.JB(new A.Uu(new A.DG(h,i)),new A.a4B(a1),A.a([],g))
+m=new A.yE(A.a([],g))
+d=0
+case 4:if(!(d<4)){s=6
+break}l=B.Bm[d]
+if(J.n4(m.a)){s=6
 break}p=8
 s=11
-return A.ac(A.afo(A.hd(m),null),$async$nS)
-case 11:l=a4
-b=l
-b=A.amI(A.aiG(A.aio(b.e).c.a.j(0,"charset")).cS(0,b.w))
-if(b==null)b=null
-else{b=b.D6("settings",0,0)
-b=b==null?null:B.c.gI(b)}n=A.aw8(b)
+return A.ac(A.afo(A.hd(l),a),$async$nS)
+case 11:k=a5
+a1=k
+a1=A.amI(A.aiG(A.aio(a1.e).c.a.j(0,"charset")).cS(0,a1.w))
+if(a1==null)a1=null
+else{a1=a1.D6("settings",0,0)
+a1=a1==null?null:B.c.gI(a1)}m=A.aw8(a1)
 p=2
 s=10
 break
 case 8:p=7
-a1=o
-n=new A.yE(A.a([],h))
+a2=o
+m=new A.yE(A.a([],g))
 s=10
 break
 case 7:s=2
 break
-case 10:case 5:++e
+case 10:case 5:++d
 s=4
 break
-case 6:c=A.a(f.e.a.split(","),t.s)
-n.a2j(f.a.x)
-b=J.arW(n.a,new A.a6E(c))
-b=A.af(b,!0,b.$ti.h("o.E"))
-f.f=b
-B.c.cH(b,new A.a6F())
-q=f
+case 6:b=A.a(e.e.a.split(","),t.s)
+m.a2j(e.a.x)
+a=J.arW(m.a,new A.a6E(b))
+a=A.af(a,!0,a.$ti.h("o.E"))
+e.f=a
+B.c.cH(a,new A.a6F())
+q=e
 s=1
 break
 case 1:return A.a8(q,r)
@@ -68404,28 +68405,28 @@ case 2:return A.a7(o,r)}})
 return A.a9($async$nS,r)},
 r1(a){var s=2
 return this.P7(a)},
-P7(a){var s=0,r=A.aa(t.Fe),q,p=2,o,n=[],m,l,k,j,i,h,g,f,e,d,c,b
-var $async$r1=A.ab(function(a0,a1){if(a0===1){o=a1
-s=p}while(true)switch(s){case 0:d=2
-c=A.a([],t.Vs)
-k=a.length,j=0
-case 3:if(!(j<a.length)){s=5
-break}i=a[j]
-h=A.hd(i.f).i(0)
-m=A.hd(A.fb(h,"upload.php","latency.txt"))
+P7(a1){var s=0,r=A.aa(t.Fe),q,p=2,o,n=[],m=this,l,k,j,i,h,g,f,e,d,c,b,a,a0
+var $async$r1=A.ab(function(a2,a3){if(a2===1){o=a3
+s=p}while(true)switch(s){case 0:b=2
+a=A.a([],t.Vs)
+j=a1.length,i=m.a,h=0
+case 3:if(!(h<a1.length)){s=5
+break}g=a1[h]
+f=A.hd(g.f).i(0)
+l=A.hd(A.fb(f,"upload.php","latency.txt"))
 $.jL()
-l=new A.kw()
-h=l
-g=h.b
-if(g!=null){h.a=h.a+($.h0.$0()-g)
-h.b=null}p=7
+k=new A.kw()
+f=k
+e=f.b
+if(e!=null){f.a=f.a+($.h0.$0()-e)
+f.b=null}p=7
 s=10
-return A.ac(A.afo(m,null).qK(0,new A.aQ(1e6*d),new A.a6C()),$async$r1)
+return A.ac(A.afo(l,i).qK(0,new A.aQ(1e6*b),new A.a6C()),$async$r1)
 case 10:n.push(9)
 s=8
 break
 case 7:p=6
-b=o
+a0=o
 n=[4]
 s=8
 break
@@ -68434,17 +68435,17 @@ s=8
 break
 case 6:n=[2]
 case 8:p=2
-h=l
-if(h.b==null)h.b=$.h0.$0()
+f=k
+if(f.b==null)f.b=$.h0.$0()
 s=n.pop()
 break
-case 9:e=l.gAA()/2
-if(e<500){i.y=e
-c.push(i)}case 4:a.length===k||(0,A.J)(a),++j
+case 9:c=k.gAA()/2
+if(c<500){g.y=c
+a.push(g)}case 4:a1.length===j||(0,A.J)(a1),++h
 s=3
 break
-case 5:B.c.cH(c,new A.a6D())
-q=c
+case 5:B.c.cH(a,new A.a6D())
+q=a
 s=1
 break
 case 1:return A.a8(q,r)
@@ -68476,7 +68477,7 @@ b.b=null
 j=b
 p=6
 s=9
-return A.ac(A.akw(m,new A.a6G(l,k)),$async$vO)
+return A.ac(A.akw(m,new A.a6G(n,l,k)),$async$vO)
 case 9:c=j
 if(c.b==null)c.b=$.h0.$0()
 i=J.ajy(k,new A.a6H())
@@ -68573,14 +68574,14 @@ A.a6G.prototype={
 $1(a){return this.P_(a)},
 P_(a){var s=0,r=A.aa(t.P),q=1,p,o=[],n=this,m,l
 var $async$$1=A.ab(function(b,c){if(b===1){p=c
-s=q}while(true)switch(s){case 0:l=n.a
+s=q}while(true)switch(s){case 0:l=n.b
 s=2
 return A.ac(l.Js(),$async$$1)
 case 2:q=3
 s=6
-return A.ac(A.afo(A.hd(a),null),$async$$1)
+return A.ac(A.afo(A.hd(a),n.a.a),$async$$1)
 case 6:m=c
-n.b.push(m.w.length)
+n.c.push(m.w.length)
 o.push(5)
 s=4
 break

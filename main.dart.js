@@ -68278,7 +68278,7 @@ A.a6B.prototype={
 nS(a2){var s=0,r=A.aa(t.m8),q,p=2,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
 var $async$nS=A.ab(function(a3,a4){if(a3===1){o=a4
 s=p}while(true)switch(s){case 0:b=t.N
-a=A.b_(["Access-Control-Allow-Origin","*","Access-Control-Allow-Methods","POST, GET, OPTIONS, PUT, DELETE, HEAD","Access-Control-Allow-Credentials","true"],b,b)
+a=A.b_(["Access-Control-Allow-Origin","*","Access-Control-Allow-Methods","GET","Access-Control-Allow-Credentials","true"],b,b)
 s=3
 return A.ac(A.afo(A.hd("https://www.speedtest.net/speedtest-config.php"),a),$async$nS)
 case 3:a0=a4
